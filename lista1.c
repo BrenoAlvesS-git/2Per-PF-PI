@@ -998,5 +998,100 @@ typedef struct pessoa{
 };
 }
 */
+/*
 #include<stdio.h>
+void fatorial(int *n){
+    if (*n < 0){
+        printf("não definido");
+    }else{
+        int resultado = 1;
+        for (int x = 2; x<= *n; x++){
+            resultado *= x;
+        }
+        *n = resultado;
+    }
+}
+void main(){
+    int numero = 5;
+    printf("Antes: %d", numero);
+    fatorial(&numero);
+    printf("\nDepois: %d", numero);
+    }
+
+*/
+/*
+#include<stdio.h>
+void trocaDeSinal(int vetor[],int quant){
+    for(int x = 0; x<quant;x++){
+        vetor[x] = vetor[x]*-1;
+    }
+
+}
+void main(){
+    int pos;
+    printf("Deseja um vetor de quantas possições? ");
+    scanf("%d",&pos);
+    int vetor[pos];
+    for (int x = 1;x<pos; x++){
+        printf("Digite um numero: ");
+        scanf("%d",vetor[x]);
+    }
+        trocaDeSinal(vetor, pos);
+}
+*/
+/*
+#include<stdio.h>
+
+int fatorial(int num){
+    if (num == 0 ){
+        return 1;
+    }else{
+        return num * fatorial(num-1);
+    }
+}
+
+void main(){
+    int valor, fat;
+    printf("Digite um valor: ");
+    scanf("%d",&valor);
+    fat = fatorial(valor);
+    printf("O fatorial de %d eh: %d ",valor, fat);
+}
+*/
+/*
+#include<stdio.h>
+int somatorio(int num){
+    if (num <= 0){
+        return 0;
+    }else
+        return num + somatorio(num-1);
+}
+
+void main(){
+    int valor,total;
+    printf("Digite um numero: ");
+    scanf("%d",&valor);
+    total = somatorio(valor);
+    printf("O somatorio de 1 até %d eh %d",valor,total);
+
+}
+*/
+
+#include<stdio.h>
+int somatorio(int a, int b){
+    if (a > b)
+    return somatorio(b, a);
+    if (a == b)
+        return a;
+    return a + somatorio(a + 1, b); 
+}
+void main(){
+    int valor1, valor2,total;
+    printf("Digite dois numero para o intervalo: ");
+    scanf("%d%d",&valor1,&valor2);
+    total = somatorio(valor1, valor2);
+    printf("O somatorio de %d ate %d eh %d",valor1,valor2, total);
+
+}
+
 

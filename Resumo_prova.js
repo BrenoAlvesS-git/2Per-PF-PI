@@ -46,3 +46,13 @@ const fibonacci = (n)=>{
         return fibonacci(n-1) + fibonacci(n-2)
     }
 }
+
+//QUESTÃO 3 lista 4
+const somaN = (n)=>{
+    if (n==0){
+        return 0
+    }else{
+        return (somaN - 1) + n
+    }
+}
+

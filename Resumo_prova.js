@@ -35,3 +35,14 @@ const enesimo = (n)=>{
         return 2 * enesimo(n-1)
     }
 }
+
+//QUESTÃO 2 lista 4
+const fibonacci = (n)=>{
+    if (n===0){
+        return 0
+    }else if(n===1){
+        return 1
+    }else{
+        return fibonacci(n-1) + fibonacci(n-2)
+    }
+}

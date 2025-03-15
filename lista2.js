@@ -207,12 +207,6 @@ console.log(soma)
 
 
 
-
-
-
-
-
-
-
+//N-Enesimo numero 
 
 

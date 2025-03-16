@@ -52,7 +52,34 @@ const somaN = (n)=>{
     if (n==0){
         return 0
     }else{
-        return (somaN - 1) + n
+        return n + somaN(n-1)
+    }
+}
+//QUESTÃO 4 lista 4
+const fatorial = (n) =>{
+    if(n==0){
+        return 1
+    }else{
+        return n * fatorial(n - 1)
     }
 }
 
+//QUESTÃO 5 lista 4
+
+const potencia2 = (n)=>{
+    if(n==0){
+        return 1
+    }else{
+        return 2 * potencia(n-1)
+    }
+}
+
+//QUESTÃO 6 lista 4
+
+const resto = (n,m)=>{
+    if(n<m){
+        return n
+    }else{
+        return resto(n-m, m)
+    }
+}

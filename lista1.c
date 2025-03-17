@@ -1076,7 +1076,7 @@ void main(){
 
 }
 */
-
+/*
 #include<stdio.h>
 int somatorio(int a, int b){
     if (a > b)
@@ -1092,6 +1092,22 @@ void main(){
     total = somatorio(valor1, valor2);
     printf("O somatorio de %d ate %d eh %d",valor1,valor2, total);
 
+}
+
+*/
+
+void main(){
+    int n1, n2;
+    int *p1, *p2;
+    n1= 5;
+    n2 =7;
+    p1 = &n1;
+    p2 = &n2;
+    printf("Os dois numeors sao: %d e %d ",n1,n2);
+    *p1 = *p1 * 2;
+    *p2 = *p2 * 3;
+    printf("\nValor depois: %d e %d",*p1,*p2);
+    
 }
 
 

@@ -83,3 +83,13 @@ const resto = (n,m)=>{
         return resto(n-m, m)
     }
 }
+
+//QUESTÃO 3 lista 5
+const tamanhoLista = (lista)=>{
+    if(lista.length === 0){
+        return 0
+    }else{
+        const [x,...xs] =lista;
+        return 1 + tamanhoLista(xs)
+    }
+}

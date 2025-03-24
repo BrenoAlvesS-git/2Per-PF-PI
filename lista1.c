@@ -1125,31 +1125,29 @@ int main(){
 }
 */
 
-int quadrado(int x, int y){
+float quadrado(float x, float y){
     return pow(x,y);
 }
 int main(){
-    int x, y;
+    float x, y;
     printf("Digite um numero: ");
-    scanf("%d",&x);
+    scanf("%f",&x);
     printf("Digite o expoente: ");
-    scanf("%d",&y);
-    printf("O quadrado de %d e %d eh %d",x, y, quadrado(x, y)+1);
+    scanf("%f",&y);
+    printf("O quadrado de %.2f e %.2f eh %.2f",x, y, quadrado(x, y));
     return 0;
 }
 
+/*
 
-
-
-
-
-int raioCirc(int raio){
+float raioCirc(float raio){
     return 3.14 *raio * raio;
 }
 int main(){
-    int raio;
+    float raio;
     printf("Digite o raio do circulo: ");
-    scanf("%d",&raio);
-    printf("A area do circulo eh: %d",raioCirc(raio));
+    scanf("%f",&raio);
+    printf("A area do circulo eh: %.2f",raioCirc(raio));
     return 0;
 }
+*/

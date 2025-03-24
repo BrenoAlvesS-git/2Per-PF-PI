@@ -1095,7 +1095,7 @@ void main(){
 }
 
 */
-
+/*
 void main(){
     int n1, n2;
     int *p1, *p2;
@@ -1109,5 +1109,47 @@ void main(){
     printf("\nValor depois: %d e %d",*p1,*p2);
     
 }
+*/
+/*
+struct cordenada{
+    int x;
+    int y;
+};
+
+int main(){
+    struct cordenada ponto;
+    ponto.x = 10;
+    ponto.y = 20;
+    printf("X: %d\nY: %d",ponto.x,ponto.y);
+    return 0;
+}
+*/
+
+int quadrado(int x, int y){
+    return pow(x,y);
+}
+int main(){
+    int x, y;
+    printf("Digite um numero: ");
+    scanf("%d",&x);
+    printf("Digite o expoente: ");
+    scanf("%d",&y);
+    printf("O quadrado de %d e %d eh %d",x, y, quadrado(x, y)+1);
+    return 0;
+}
 
 
+
+
+
+
+int raioCirc(int raio){
+    return 3.14 *raio * raio;
+}
+int main(){
+    int raio;
+    printf("Digite o raio do circulo: ");
+    scanf("%d",&raio);
+    printf("A area do circulo eh: %d",raioCirc(raio));
+    return 0;
+}

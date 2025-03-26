@@ -8,7 +8,7 @@ void main(){
         printf("Arquivo não pode ser aberto");
         exit(1);
     }
-    if (fgets(frase, sizeof(frase), arq) != NULL){
+    if (fgets(frase, 30, arq) != NULL){
         puts(frase);
     } else {
         printf("Erro ao ler o arquivo\n");

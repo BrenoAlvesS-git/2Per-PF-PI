@@ -11,7 +11,7 @@ void main(){
         printf("Digite algo para pôr no arquivo: ");
         scanf("%29[^\n]s",&string);
         fflush(stdin);
-        fprintf(arq,string);
+        fprintf(arq,"\n%s",string);
     }
     
     fclose(arq);

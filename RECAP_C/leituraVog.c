@@ -41,7 +41,7 @@ void main(){
         u = tolower(u);
         putchar(u);
         if (u == 'u'){
-            i++;
+            w++;
         }
         
         if(feof(arq)){
@@ -49,7 +49,7 @@ void main(){
         }
 
     }
-    printf("\nNumero de vezes que 'a' aparece: %d",i);
+    printf("\nNumero de vezes que\n'a' aparece: %d,\n'e' aparece: %d,\n'i'aparece: %d,\n'o'aparece: %d,\n'u'aparece: %d",i,x,y,z,w);
     
     fclose(arq);
 }

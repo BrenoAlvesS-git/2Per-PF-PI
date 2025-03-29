@@ -13,7 +13,7 @@ void imprime(int v[], int tam){
 }
 //FUNÇÃO DE MATRIZ
 void imprime(int m[][4], int n){
-    for(int x = 0; x< n, x++){
+    for(int x = 0; x< n; x++){
         for(int y = 0; y< 4; y++){
             printf("%d ",m[x][y]);
         }

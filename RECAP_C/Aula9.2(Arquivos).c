@@ -8,4 +8,5 @@ void main(int argc, char *argv[]){
     }else{
         printf("Nao foram inseridos argumentos");
     }
+    
 }

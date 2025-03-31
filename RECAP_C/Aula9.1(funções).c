@@ -22,6 +22,7 @@ void imprime(int m[][4], int n){
         }
     }
 }
+
 //OUTRA FUNÇÃO DE VETOR
 void imprime5(int v[5]){
     for(int x = 0; x< 5; x++){
@@ -37,5 +38,6 @@ void main(){
     scanf("%f%f",&x,&y);
     m = maior(x,y);
     printf("O maior numero é: %.2f ou %.2f",m, maior(x,y));
+    
 }
 

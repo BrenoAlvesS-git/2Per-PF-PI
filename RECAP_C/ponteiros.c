@@ -9,4 +9,5 @@ int main(){
     printf("Endereço de var: %p\n", &var);
     printf("Conteudo apontado por ptr: %d\n", *ptr);
     printf("Endereço do ptr: %p\n", ptr);
+
 }

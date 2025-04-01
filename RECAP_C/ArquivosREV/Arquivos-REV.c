@@ -58,7 +58,7 @@ void lerarquivo(){
         fprintf(arquivo,"%d\n",&quant);
         for(int x = 0; x< quant; x++){
             pessoa p;
-            fscanf(arquivo,"%s\n",&p.nome);
+            fgets(p.nome,50,arquivo);
             fscanf(arquivo,"%d\n",&p.idade);
             fscanf(arquivo,"%c\n",&p.sexo);
             lista[x] = p;

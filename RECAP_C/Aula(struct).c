@@ -10,6 +10,7 @@ struct pessoa{
 };
 typedef struct pessoa pessoa;
 
+
 void main(){
     pessoa Breno = {22,78.0,"Breno"};
     printf("A idade de %s eh %d",Breno.nome,Breno.idade);

@@ -80,6 +80,7 @@ int inserePosi(tipoLista *listaEnc, int valor, int posi) {
         return insereListaVazia(listaEnc, valor);
     }
 
+
     if (posi == 0) {
         return insereNaFrente(listaEnc, valor);
     }

@@ -20,9 +20,13 @@ void InicializarLista(Lista *lista){
 void insere_no_inicio(Lista *lista, int num){
     No *novo = malloc(sizeof(No));
     if (novo){
+        /*vagão-pess = quant*/
         novo->valor = num;
+        /*vagao prox  = motor*/
         novo->proximo = lista->inicio;
+        /*motor       =vagao*/
         lista->inicio = novo;
+        /*tamanho do trem*/
         lista->tam++;
     }else{
         printf("Erro ao alocar memoria");
@@ -88,5 +92,41 @@ void imprimir(Lista lista){
 
 
 int main(){
-    return 1;
+    int deci,valor, anterior;
+
+    Lista lista;
+    InicializarLista(&lista);
+    do{
+        printf("\n\t0-Sair\n\t1-InserirI\n\t2-Inserir Fim\n\t3-InserirM\n\t4-Imprimir\n");
+        scanf("%d",&deci);
+        switch (deci)
+        {
+        case 1:
+            printf("Digite um valor pra adicionar: ");
+            scanf("%d", &valor);
+            insere_no_inicio(&lista, valor);
+            break;
+        case 2:
+            printf("Digite um valor pra adicionar: ");
+            scanf("%d", &valor);
+            insere_fim(&lista, valor);
+            break;
+        case 3:
+            printf("Digite um valor pra adicionar e o valor de referencia: ");
+            scanf("%d%d", &valor, &anterior);
+            insere_Meio(&lista,valor,anterior);
+            break;
+        case 4:
+            imprimir(lista);
+            break;
+        default:
+            if(deci != 0 ){
+                printf("Inventando opcao?");
+            }
+            break;
+        }
+    } while (deci != 0);
+    
+
+    return 0;
 }

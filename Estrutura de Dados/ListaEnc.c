@@ -7,7 +7,6 @@ typedef struct no{
     int dado;
     struct no *proxNo;
 }tipoNo;
-
 /*Tipo de dado que representa uma lista encadeada*/
 typedef struct listaGerenciada{
     tipoNo *inicio;
@@ -24,14 +23,14 @@ void inicializa(tipoLista *lista){
 
 /*Função para inserção de nó em lista vazia*/
 int insereListaVazia(tipoLista *listaEnc, int valor){
-tipoNo *novoNo = (tipoNo*) malloc(sizeof(tipoNo)), outro;
+tipoNo *novoNo = malloc(sizeof(tipoNo));
 if(novoNo == NULL)
     return 0;
-novoNo->dado = valor;
-novoNo->proxNo = NULL;
-listaEnc->inicio = novoNo;
-listaEnc->fim = novoNo;
-listaEnc->quant++;
+novoNo->dado = valor;       //Guarda o valor passado
+novoNo->proxNo = NULL;      //Proximo nó aponta pra NULL
+listaEnc->inicio = novoNo;  // Inicio da lista recebe o novoNo
+listaEnc->fim = novoNo;     //Final da lista tambem recebe novo nó, já que a lista estava vazia
+listaEnc->quant++;          
 return 1;
 }
 
@@ -45,9 +44,9 @@ else{
     novoNo = (tipoNo*)malloc(sizeof(tipoNo));
     if(novoNo==NULL)
         return 0;
-    novoNo->dado=valor;
-    novoNo->proxNo=listaEnc->inicio;
-    listaEnc->inicio=novoNo;
+    novoNo->dado=valor;                 //Valor é colocado no campo dado
+    novoNo->proxNo=listaEnc->inicio;    //O proximo nó recebe o valor que estava no inicio
+    listaEnc->inicio=novoNo;            // O inicio passa a ser o valor que o usuario colocou
     listaEnc->quant++;
     return 1;
 }

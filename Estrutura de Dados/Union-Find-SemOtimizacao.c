@@ -26,7 +26,7 @@ void union_sets(int x, int y) {
         parent[ry] = rx;                // Faz a raiz de y apontar para a raiz de x 
     }                                   
 }                                       
-
+//Complexidade O(N)
 int main(void) {                       
     int n = 7;                          
     makeset(n);                         

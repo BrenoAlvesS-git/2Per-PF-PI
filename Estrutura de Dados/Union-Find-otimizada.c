@@ -38,7 +38,7 @@ void union_sets(int x, int y) {            // Efetua a união com heurística po
         rankv[rx]++;                       // E incrementa o rank da nova raiz 
     }                                      
 }                                          
-
+//Complexidade (O)1
 int main(void) {                          
     int n = 7;                             // Ussando elementos 0..6
     makeset(n);                           
